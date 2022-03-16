@@ -1,0 +1,463 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../fonts/icones.ttf)
+}
+
+body {
+    font-family: 'Quicksand', 'icones', sans-serif;
+    background-color: #1d1d1d;
+}
+
+/* FLOAT - para posicionar o menu à esquerda e o conteúdo à direita*/
+.float-pagina {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.float-menu {
+    float: left;
+    width: 250px;
+    height: 100vw;
+    position: fixed; /* para o menu ficar fixo */
+}
+
+.float-conteudo {
+    margin-left: 250px;
+    background-color: #1d1d1d;
+}
+
+/* 
+/* FLOAT */
+
+/* MENU LATERAL */
+.menu-lateral {
+    background-color: rgb(66, 8, 8);
+    display: flex;
+    flex-direction: column;
+}
+
+.logo-menu-lateral {
+    width: 100px;
+    margin: 35px 75px 25px 75px;
+}
+
+.item-menu-lateral {
+    color: white;
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 25px;
+    margin-bottom: 5px;
+    justify-content: center;
+}
+
+.item-menu-lateral:hover {
+    background-color: white;
+    color: rgb(66, 8, 8);
+    width: 200px;
+    align-self: center;
+    border-radius: 4px;
+}
+
+.ativo-menu-lateral {
+    background-color: rgb(255, 227, 227);
+    width: 200px;
+    color: #1b0202;
+    align-self: center;
+    border-radius: 4px;
+}
+
+.item-menu-lateral::before {
+    content: "\e902";
+    padding-right: 16px;
+    padding-left: 8px;
+}
+/* MENU LATERAL */
+
+
+/* home.html */
+/* CONTEUDO PRINCIPAL */
+
+/* CONTEUDO PRINCIPAL - imagem */
+.imagem-principal {
+    width: 100%;
+    height: 70vh;
+    background-image: url(../img/imagem1.png);
+}
+
+.titulo-imagem {
+    font-size: 10vh;
+    font-weight: 700;
+    color: white;
+    padding-left: 13.768115942%;
+    padding-top: 5.072463768%;
+}
+
+.cta-imagem {
+    font-size: 5vh;
+    color: white;
+    padding-left: 13.768115942%;
+    padding-top: 15vh;
+    padding-bottom: 5vh;
+}
+
+.botao-cta-imagem {
+    font-size: 6vh;
+    font-weight: 700;
+    color: #1b0202;
+    background-color: white;
+    border-radius: 8px;
+    margin-left: 13.768115942%;
+    padding: 1vh 0.724637681%;
+}
+/* CONTEUDO PRINCIPAL - destaques */
+.titulo-produtos {
+    line-height: 30vh;
+    color: white;
+    font-size: 10vh;
+    font-weight: 700;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 4vh;
+}
+
+/* CONTEUDO PRINCIPAL - cartoes */
+.cartoes {
+    width: 100%;
+    background-color: #171717;
+}
+
+.cartao {
+    margin-bottom: 14vh;
+    background-color: #c4c4c4;
+    border-radius: 1.15942029%;
+}
+
+.cartao-esquerda {
+    float: left;
+    width: 30.4347826%;
+    height: 60vh;
+    margin-left: 2.8985507%;
+}
+
+.cartao-centro {
+    float: right;
+    width: 30.4347826%;
+    height: 60vh;
+    margin: 0 1.4492754%;
+}
+
+.cartao-direita {
+    float: right;
+    width: 30.4347826%;
+    height: 60vh;
+    margin-right: 2.8985507%;
+}
+
+/* CONTEUDO PRINCIPAL - cartao */
+.imagem-destaque {
+    width: 100%;
+    height: 58.3333333%;
+    border-radius: 1.15942029% 1.15942029% 0 0;
+}
+
+.titulo-cartao {
+    line-height: 8vh;
+    font-size: 5vh;
+    font-weight: 700;
+    text-align: center;
+}
+
+.preco-cartao {
+    font-size: 2.8vh;
+    text-align: center;
+    margin-bottom: 3vh;
+}
+
+.botao-produto {
+    width: 20.289855072%;
+    line-height: 6vh;
+    font-size: 3.6vh;
+    text-align: center;
+    color: white;
+    background-color: darkred;
+    border-radius: 0.579710145%;
+    padding: 0.579710145% 2.898550725%;
+}
+
+.botao-produto:hover {
+    background-color: rgb(151, 28, 28);
+}
+/* CONTEUDO PRINCIPAL */
+
+
+/* FOOTER */
+footer {
+    width: 100%;
+    height: 20vh;
+    color: #c4c4c4;
+    background-color: #1b0202;
+    overflow: hidden;
+}
+
+.texto-footer {
+    font-size: 3.2vh;
+    text-align: center;
+    margin-top: 6vh;
+}
+
+.titulo-footer {
+    font-size: 2.4vh;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 2vh;
+}
+
+.ano-footer {
+    font-size: 1.6vh;
+    text-align: center;
+    margin-top: 1vh;
+}
+/* FOOTER */
+/* home.html */
+
+
+
+/* sushi.html */
+.cartao-sushi {
+    width: 30.4347826%;
+    height: 40vh;
+    border-radius: 8px;
+    background-color: #c4c4c4;
+}
+
+.fileira1 {
+    padding-top: 7vh;
+    
+}
+
+.sushi-footer {
+    margin-top: 7vh;
+    float: right;
+}
+
+.fileira1-cartao-esquerda {
+    float: left;
+    width: 30.4347826%;
+    height: 40vh;
+    margin-left: 2.898550725%;
+    margin-bottom: 6vh;
+}
+
+.fileira1-cartao-centro {
+    float: right;
+    width: 30.4347826%;
+    height: 40vh;
+    margin: 0 1.449275362%;
+    margin-bottom: 6vh;
+}
+
+.fileira1-cartao-direita {
+    float: right;
+    width: 30.4347826%;
+    height: 40vh;
+    margin-right: 2.898550725%;
+    margin-bottom: 6vh;
+}
+
+.fileira2-cartao-esquerda {
+    float: left;
+    width: 30.4347826%;
+    height: 40vh;
+    margin-left: 2.898550725%;
+}
+
+.fileira2-cartao-centro {
+    float: right;
+    width: 30.4347826%;
+    height: 40vh;
+    margin: 0 1.449275362%;
+}
+
+.fileira2-cartao-direita {
+    float: right;
+    width: 30.4347826%;
+    height: 40vh;
+    margin-right: 2.898550725%;
+}
+.imagem-sushi {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px 8px 0 0;
+}
+
+.titulo-sushi {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.descricao-sushi {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 8px;
+}
+/* sushi.html */
+
+
+/* doces.html */
+.cartao-doces {
+    width: 30.4347826%;
+    height: 40vh;
+    border-radius: 8px;
+    background-color: #c4c4c4;
+}
+
+
+.doces-footer {
+    margin-top: 7vh;
+    float: right;
+}
+
+.imagem-doces {
+    width: 100%;
+    height: 50%;
+    border-radius: 8px 8px 0 0;
+}
+
+.titulo-doces {
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 15px;
+}
+
+.descricao-doces {
+    font-size: 10px;
+    text-align: center;
+    margin-top: 8px;
+}
+/* doces.html */
+
+
+/* quemsomos.html */
+.titulo-quemsomos {
+    font-size: 10vh;
+    font-weight: 700;
+    line-height: 10vh;
+    color: white;
+    text-align: center;
+    padding-top: 7vh;
+    padding-bottom: 6vh;
+}
+
+.texto-quemsomos {
+    width: 85.507246377%;
+    height: 20vh;
+    font-size: 2.4vh;
+    color: white;
+    text-align: center;
+    padding: 0 7.246376812%;
+}
+
+.imagens-quemsomos {
+    margin-top: 10vh;
+}
+
+.imagem1-quemsomos {
+    width: 28.985507246%;
+    height: 37vh;
+    float: left;
+    margin-left: 17.391304348%;
+}
+
+.imagem2-quemsomos {
+    width: 28.985507246%;
+    height: 37vh;
+    float: right;
+    margin-right: 17.391304348%;
+}
+
+.quemsomos-footer {
+    margin-top: 10vh;
+    float: right;
+}
+/* quemsomos.html */
+
+
+/* contato.html */
+.float-forms {
+    float: left;
+    width: 50%;
+    height: 80vh;
+}
+
+.titulo-forms {
+    font-size: 5vh;
+    line-height: 5vh;
+    text-align: center;
+    color: white;
+    padding-top: 7vh;
+    padding-bottom: 5vh;
+ }
+
+
+ .titulo-pergunta {
+    width: 72.463768116%;
+    line-height: 2.4vh;
+    font-size: 2.4vh;
+    color: white;
+    padding-bottom: 1vh;
+    padding-left: 6.884057971%;
+ }
+
+ .pergunta-forms {
+    width: 72.463768116%;
+    line-height: 5vh;
+    font-size: 5vh;
+    margin-bottom: 1vh;
+    margin-left: 6.884057971%;
+    border-radius: 4px;
+ }
+
+ .obs-forms {
+    margin-bottom: 3.2vh;
+    width: 72.463768116%;
+ }
+
+ .botao-forms {
+    line-height: 5vh;
+    font-size: 5vh;
+    font-weight: 700;
+    color: white;
+    background-color: darkred;
+    border-radius: 4px;
+    padding: 1vh 2.31884058%;
+    margin-left: 6.884057971%;
+ }
+
+ .botao-forms:hover {
+     background-color: rgb(151, 28, 28);
+ }
+
+.titulo-mapa {
+   font-size: 5vh;
+   line-height: 5vh;
+   text-align: center;
+   color: white;
+   padding-top: 7vh;
+   padding-bottom: 5vh;
+}
+
+.mapa {
+    width: 72.463768116%;
+    height: 40vh;
+    margin: 0 auto;
+}
+
+.float-mapa {
+    float: right;
+    width: 50%;
+    height: 80vh;
+}
+/* contato.html */

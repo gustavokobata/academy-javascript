@@ -5,6 +5,7 @@
 
 body {
     font-family: 'Quicksand', 'icones', sans-serif;
+    
 }
 
 /* FLOAT - para posicionar o menu à esquerda e o conteúdo à direita*/
@@ -15,10 +16,8 @@ body {
 .float-menu {
     float: left;
     width: 250px;
-    height: 500px;
-    position: fixed; /* para o menu ficar fixo */<link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300&display=swap" rel="stylesheet">
+    height: 100vw;
+    position: fixed; /* para o menu ficar fixo */
 }
 
 .float-conteudo {
@@ -26,8 +25,6 @@ body {
     width: 690px;
     background-color: #1d1d1d;
 }
-
-/* 
 /* FLOAT */
 
 /* MENU LATERAL */
