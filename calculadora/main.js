@@ -34,43 +34,29 @@ class Calculator {
         let computationResults
         const preVar = parseFloat(this.previousOperations)
         const curVar = parseFloat(this.displayResults)
-
-        if (this.chooseOperation(this.operation) === '+') {
-            computationResults = preVar + curVar
-        } else if (this.chooseOperation(this.operation) === '-') {
-            computationResults = preVar - curVar
-        } else if (this.chooseOperation(this.operation) === '÷') {
-            computationResults = preVar / curVar
-        } else if (this.chooseOperation(this.operation) === '*') {
-            computationResults = preVar * curVar
-        } else if (this.chooseOperation(this.operation) === '%') {
-            computationResults = curVar / 100
-        } 
-
-            
-        // if (isNaN(preVar) || isNaN(curVar)) return
-        // switch (this.operation) {
-        //     case '+':
-        //         computationResults = preVar + curVar
-        //         break
-        //     case '-':
-        //         computationResults = preVar - curVar
-        //         break
-        //     case '*':
-        //         computationResults = preVar * curVar
-        //         break
-        //     case '÷':
-        //         computationResults = preVar / curVar
-        //         break
-        //     case '+/-':
-        //         computationResults = curVar * (-1)
-        //         break
-        //     case '%':
-        //         computationResults = curVar / 100
-        //         break
-        //     default:
-        //         return
-        // }
+        if (isNaN(preVar) || isNaN(curVar)) return
+        switch (this.operation) {
+            case '+':
+                computationResults = preVar + curVar
+                break
+            case '-':
+                computationResults = preVar - curVar
+                break
+            case '*':
+                computationResults = preVar * curVar
+                break
+            case '÷':
+                computationResults = preVar / curVar
+                break
+            case '+/-':
+                computationResults = curVar * (-1)
+                break
+            case '%':
+                computationResults = curVar / 100
+                break
+            default:
+                return
+        }
         this.displayResults = computationResults
         this.operation = undefined
         this.previousOperations = ''
