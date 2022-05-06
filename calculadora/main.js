@@ -33,7 +33,7 @@ class Calculator {
     compute(){
         let computationResults
         const preVar = parseFloat(this.previousOperations)
-        const curVar = parseFloat(this.displayResults)
+        const curVar = parseFloat(this.displayResults)            
         if (isNaN(preVar) || isNaN(curVar)) return
         switch (this.operation) {
             case '+':
