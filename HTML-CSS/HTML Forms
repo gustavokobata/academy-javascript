@@ -1,8 +1,0 @@
-HTML Forms
-
-para inserir algo, existem alguns tipos:
-<input type="text">: texto
-<input type="radio">: lista
-<input type="checkbox">: selecionar caixa
-<input type="submit">: para enviar resposta
-<input type="button">: botão
