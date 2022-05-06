@@ -1,0 +1,96 @@
+@font-face {
+    font-family: 'icones';
+    src: url(fonts/icones.ttf);
+}
+
+body {
+    font-family: 'Open Sans', 'icones', sans-serif;
+    background-color: #464646;
+    width: 940px;
+}
+
+.menu-lateral {
+    background-color: #343434;
+    font-size: 1rem;
+    width: 250px;
+    height: 100vw;
+    display: flex;
+    align-content: flex-start;
+    flex-direction: column;
+    position: fixed;
+    padding-top: 24px;
+}
+
+.ativo-menu-lateral {
+    color: #747171;;
+    padding-left: 8px;
+    font-weight: 500;
+    border-left: 8px solid #ffffff;
+}
+
+.red-logo-menu-lateral {
+    align-self: center;
+}
+
+.logo-menu-lateral {
+   align-self: center;
+   width: 150px;
+   padding: 16px;
+}
+
+.itens-menu-lateral {
+    height: 50px;
+    color: #ffffff;
+    padding-left: 32px;
+    display: flex;
+    align-items: center;
+    border-bottom: #747171 solid 1px;
+    position: static;
+}
+
+.itens-menu-lateral:hover {
+    color: #747171;
+    background-color: #464646;
+
+}
+
+.home-menu-lateral::before {
+    content: "\e902";
+    font-size: 24px;
+    padding-right: 16px;
+}
+
+.sushi-menu-lateral::before {
+    content: "\e902";
+    font-size: 24px;
+    padding-right: 16px;
+}
+
+.sushidoce-menu-lateral::before {
+    content: "\e902";
+    font-size: 24px;
+    padding-right: 16px;
+}
+
+.contato-menu-lateral::before {
+    content: "\e902";
+    font-size: 24px;
+    padding-right: 16px;
+}
+
+.quemsomos-menu-lateral::before {
+    content: "\e902";
+    font-size: 24px;
+    padding-right: 16px;
+}
+
+
+.principal {
+    width: 690px;
+    padding-left: 250px;
+    height: 100vw;
+    background-image: url(img/background-planta2.jpg);
+    background-repeat: no-repeat;
+    ;
+    height: 100vw;
+}

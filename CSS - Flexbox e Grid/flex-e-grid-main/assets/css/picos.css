@@ -1,0 +1,194 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+/* BODY - MOBILE */ 
+/* Lembrando que a base do projeto é feita para mobile. Depois, utilizando @media, é feita a responsividade para 1440px e desktop. */
+body {
+ background-color: #1D232A;
+ font-family: 'Open Sans', 'icones', sans-serif;
+ color: #ffffff;
+}
+/* BODY - Mobile */
+
+/* BODY - 1440px */
+@media screen and (min-width: 1440px) {
+    body {
+        display: grid;
+        grid-template-columns: auto 1fr;
+    }
+}
+/* BODY - 1440px */
+
+/* CABEÇALHO - MOBILE */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15191C;
+    padding: 8px 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.16);
+}
+
+.navbar-logo {
+    width: 40px;
+}
+
+.navbar-perfil {
+    display: none;
+}
+
+.navbar-menu i::before {
+    content: "\e904";
+    font-size: 24px;
+}
+
+.navbar-notificacao i::before {
+    content: "\e906";
+    font-size: 24px;
+}
+/* CABEÇALHO - MOBILE */
+
+/* CABEÇALHO - 1440px */
+@media screen and (min-width: 1440px) {
+    .navbar {
+        background-color: #1D232A;
+        display: grid;
+        column-gap: 32px;
+        grid-template-columns: 1fr auto;
+        padding: 16px 60px;
+        height: 80px;
+        box-sizing: border-box;
+        grid-column: 2;
+    }
+
+    .navbar-menu {
+        display: none;
+    }
+
+    .navbar-logo {
+        display: none;
+    }
+
+    .navbar-perfil {
+        display: grid;
+        grid-template-columns: repeat(3, auto);
+        column-gap: 8px;
+        align-items: center;
+        justify-self: flex-end;
+        color: #95999C;
+        padding: 8px 32px;
+        border-right: 1px solid #95999C;
+    }
+
+    .navbar-perfil::before {
+        content: "";
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../img/profile_2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .navbar-perfil::after {
+        content: "\e90d";
+        color: #ffffff;
+        font-size: 1.5rem;
+    }
+}
+/* CABEÇALHO - 1440px */
+
+/* MENU LATERAL - MOBILE */
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    background-color: #15191C;
+    width: 75vw; /* para ocupar 75% do viewport (no caso, 75% da página) */
+    height: 100vh;
+    /* MENU ESCONDIDO */
+    position: absolute;
+    left: -100vw; /* para ficar escondido */
+    transition: .25s; /* para ter uma animação */
+}
+
+.menu-lateral--ativo {
+    left: 0;
+    transition: .25s;
+}
+
+.menu-lateral_logo {
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+
+.menu-lateral_links {
+    height: 64px;
+    color: #95999C;
+    padding-left: 64px;
+    display: flex;
+    align-items: center;
+}
+
+.menu-lateral_link--ativo {
+    color: #ffffff;
+    padding-left: 56px;
+    border-left: 8px solid #ffffff;
+}
+
+.menu-lateral_links::before {
+    content: "\e900";
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    left: 24px;
+}
+
+.menu-lateral_logo {
+    width: 118px;
+    align-self: center;
+    padding: 16px;
+}
+
+.menu-lateral_link--inicio::before {
+    content: "\e902";
+}
+
+.menu-lateral_link--video::before {
+    content: "\e90e";
+}
+
+.menu-lateral_link--picos::before {
+    content: "\e909";
+}
+
+.menu-lateral_link--integrantes::before {
+    content: "\e903";
+}
+
+.menu-lateral_link--camisas::before {
+    content: "\e900";
+}
+
+.menu-lateral_link--pinturas::before {
+    content: "\e90a";
+}
+/* MENU LATERAL - MOBILE */
+
+/* MENU LATERAL - 1440px */
+@media screen and (min-width: 1440px) {
+    .menu-lateral {
+        position: fixed;
+        left: 0;
+        width: 200px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+        transition: none;
+
+    }
+}
+/* MENU LATERAL - 1440px */

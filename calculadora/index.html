@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Quicksand:wght@400;500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="calculator.css">
+    <link rel="icon" href="assets/img/calculadora.png">
+</head>
+<body>
+    <div class="mode">
+        <input type="checkbox" class="checkbox-on-off" id="on-off" name="theme">
+        <label for="on-off" class="button-on-off"></label>
+    </div>
+    <main class="calculator-background">
+        <section class="display">
+            <article class="display-lines">
+                <div class="previous-operations"></div>
+                <div class="results"></div>
+            </article>
+        </section>
+
+        <button class="c operations click-button" >C</button>
+        <button class="percentage operations click-button">%</button>
+        <button class="sign operations click-button">+/-</button>
+        <button class="backspace click-button"></button>    
+
+        <button class="seven numbers click-button">7</button>
+        <button class="eight numbers click-button">8</button>
+        <button class="nine numbers click-button">9</button>
+        <button class="division operations click-button">÷</button>
+
+        <button class="four numbers click-button">4</button>
+        <button class="five numbers click-button">5</button>
+        <button class="six numbers click-button">6</button>
+        <button class="multiplication operations click-button">*</button>
+
+        <button class="one numbers click-button">1</button>
+        <button class="two numbers click-button">2</button>
+        <button class="three numbers click-button">3</button>
+        <button class="subtraction operations click-button">-</button>
+
+        <button class="zero numbers click-button">0</button>
+        <button class="dot numbers click-button">.</button>
+        <button class="equal numbers click-button">=</button>
+        <button class="sum operations click-button">+</button>
+    </main>
+
+    <audio src="assets/sounds//click-sound.mp3" id="click-sound"></audio>
+
+    <script src="main.js"></script>
+    <script src="darkmode.js"></script>
+    <script src="sound.js"></script>
+</body>
+</html>

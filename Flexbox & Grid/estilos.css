@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'icones';
+    src: url(../font/icones.ttf);
+}
+
+body {
+    background-color: black;
+    font-family: 'Open Sans', 'icones', sans-serif;
+    color: #FFFFFF;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 1fr 2fr 2fr 2fr;
+    grid-template-rows: 40px auto auto;
+    margin: 0;
+}
+
+.cabecalho {
+    display: grid;
+    grid-area: 1 / 2 / 1 / 5;
+}
+
+.menu-lateral  {
+    display: grid;
+    grid-area: 1 / 1 / 3 / 2;
+    background-color: gray;
+    justify-content: center;
+}
+
+.menu-lateral_logo {
+    align-self: center;
+    padding: 24px;
+    
+}
+
+.menu-lateral_link {
+    display: flex;
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: black;
+    
+}

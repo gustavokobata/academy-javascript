@@ -1,0 +1,44 @@
+HTML List
+
+lista sem ordem
+<ul>
+  <li></li>
+  <li></li>
+</ul>
+
+lista com ordem
+<ol>
+  <li></li>
+  <li></li>
+</ol>
+
+descrição da lista
+<dl>
+  <dt>abc</dt>
+  <dd>desc abc</dd>
+</dl>
+
+
+para lista sem ordem:
+
+escolher o marcador:
+disc: padrão
+circle: círculo
+square: quadrado
+none: sem marcador
+
+<ul style="list-style-type:circle;">
+  <li>abc</li>
+  <li>def</li>
+</ul>
+
+
+para lista com ordem:
+
+escolher o marcador:
+type="1": itens numerados com números
+type="A": itens numerados com letras maiúsculas
+type="a": itens numerados com letras minúsculas
+type="I": itens numerados com números romanos maiúsculos
+type="i": itens numerados com números romanos minúsculos
+

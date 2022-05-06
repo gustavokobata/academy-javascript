@@ -1,0 +1,319 @@
+html {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Quicksand', sans-serif;
+    font-family: 'Roboto', sans-serif;
+
+    --background: white;
+    --operations-button: #94E059;
+    --operations-color: black;
+    --numbers-button: #C4C4C4;
+    --numbers-color: black;
+    --backspace-button: #56A618;
+    --cor-backspace: black;
+    --equal-button: #7E7E7E;
+    --equal-color: black;
+    --display-color: white;
+    --calculator-color: #5E5E5E;
+    --display-font: black;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    font-family: 'Roboto', sans-serif;
+}
+
+.calculator-background {
+    background-color: var(--calculator-color);
+    grid-area: 3 / 9 / 10 / 13;
+    border-radius: 5px;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+}
+
+/* MODO ESCURO */
+.mode {
+    grid-area: 2 / 10 / 3 / 12;
+    margin: auto;
+}
+
+.checkbox-on-off {
+    position: absolute;
+    left: -9999px;
+}
+
+.button-on-off {
+    display: inline-block;
+    vertical-align: middle;
+    position: relative;
+    cursor: pointer;
+}
+
+.button-on-off::before, .button-on-off::after {
+    content: "";
+}
+
+.button-on-off::before {
+    display: inline-block;
+    width: 4em;
+    height: 2em;
+    background: #c4c4c4;
+    border-radius: 2em;
+}
+
+.button-on-off::after {
+    position: absolute;
+    top: 0.05em;
+    left: 0.05em;
+    width: 1.9em;
+    height: 1.9em;
+    background: #ffffff;
+    border-radius: 100%;
+}
+
+.checkbox-on-off:checked + .button-on-off::before {
+    background: #56A618;
+}
+
+.checkbox-on-off:checked + .button-on-off::after {
+    left: 2.05em;
+}
+
+/* MODO ESCURO */
+
+/* VISOR */
+.display {
+    background-color: var(--display-color);
+    color: var(--display-font);
+    grid-area: 1 / 1 / 3 / 5;
+    border-radius: 5px;
+    margin: 10px 10px 5px 10px;
+    box-shadow: 0px 1px 1px 1px black;
+}
+
+.display-lines {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    
+}
+
+.previous-operations {
+    font-size: 2em;
+    opacity: .50;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin: 10px 10px 0px auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+
+.results {
+    font-size: 4em;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    margin: auto 10px 20px auto;
+    word-wrap: break-word;
+    word-break: break-all;
+}
+/* VISOR */
+
+/* BOTÕES */
+button {
+    text-align: center;
+    cursor: pointer;
+}
+
+.operations {
+    background-color: var(--operations-button);
+    color: var(--operations-color);
+}
+
+.numbers {
+    background-color: var(--numbers-button);
+    color: var(--numbers-color);
+}
+
+button:hover {
+    opacity: 0.75;
+}
+
+.c {
+    font-size: 3em;
+    grid-area: 3 / 1 / 4 / 2;
+    border-radius: 5px;
+    margin: 5px 5px 5px 10px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.percentage {
+    font-size: 3em;
+    grid-area: 3 / 2 / 4 / 3;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.sign  {
+    font-size: 3em;
+    grid-area: 3 / 3 / 4 / 4;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.backspace {
+    background-image: url(assets/img/excluir-preto.png);
+    font-size: 3em;
+    background-color: var(--backspace-button);
+    color: var(--backspace-color);
+    grid-area: 3 / 4 / 4 / 5;
+    border-radius: 5px;
+    margin: 5px 10px 5px 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+
+.seven {
+    font-size: 3em;
+    grid-area: 4 / 1 / 5 / 2;
+    border-radius: 5px;
+    margin: 5px 5px 5px 10px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.eight {
+    font-size: 3em;
+    grid-area: 4 / 2 / 5 / 3;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.nine  {
+    font-size: 3em;
+    grid-area: 4 / 3 / 5 / 4;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.division {
+    font-size: 3em;
+    grid-area: 4 / 4 / 5 / 5;
+    border-radius: 5px;
+    margin: 5px 10px 5px 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.four {
+    font-size: 3em;
+    grid-area: 5 / 1 / 6 / 2;
+    border-radius: 5px;
+    margin: 5px 5px 5px 10px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.five {
+    font-size: 3em;
+    grid-area: 5 / 2 / 6 / 3;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.six  {
+    font-size: 3em;
+    grid-area: 5 / 3 / 6 / 4;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.multiplication {
+    font-size: 3em;
+    grid-area: 5 / 4 / 6 / 5;
+    border-radius: 5px;
+    margin: 5px 10px 5px 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.one {
+    font-size: 3em;
+    grid-area: 6 / 1 / 7 / 2;
+    border-radius: 5px;
+    margin: 5px 5px 5px 10px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.two {
+    font-size: 3em;
+    grid-area: 6 / 2 / 7 / 3;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.three  {
+    font-size: 3em;
+    grid-area: 6 / 3 / 7 / 4;
+    border-radius: 5px;
+    margin: 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.subtraction {
+    font-size: 3em;
+    grid-area: 6 / 4 / 7 / 5;
+    border-radius: 5px;
+    margin: 5px 10px 5px 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.zero {
+    font-size: 3em;
+    grid-area: 7 / 1 / 8     / 2;
+    border-radius: 5px;
+    margin: 5px 5px 10px 10px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.dot {
+    font-size: 3em;
+    grid-area: 7 / 2 / 8 / 3;
+    border-radius: 5px;
+    margin: 5px 5px 10px 5px;
+    box-shadow: 1px 1px 2px 1px black;
+}
+
+.equal  {
+    font-size: 3em;
+    background-color: var(--equal-button);
+    grid-area: 7 / 3 / 8 / 4;
+    border-radius: 5px;
+    margin: 5px 5px 10px 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+
+.sum {
+    font-size: 3em;
+    grid-area: 7 / 4 / 8 / 5;
+    border-radius: 5px;
+    margin: 5px 10px 10px 5px;
+    box-shadow: -1px 1px 2px 1px black;
+}
+/* BOTÕES */

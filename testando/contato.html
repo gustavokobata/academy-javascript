@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Contato - Midori Sushi</title>
+    <link rel="icon" type="icon" href="/assets/icone.ico">
+    <meta name="description" content="Restaurante ______ de comida japonesa localizado em ____________. Disponivel cardapio e contatos.">
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,300&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="index.html" target="_self"><img id="logo" src="/assets/logo.png" alt="Logo do restaurante com duas carpas verdes e o nome Midori"></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="produtos.html">Sushis tradicionais</a></li>
+                <li><a href="premium.html">Sushi Premium</a></li>
+                <li><a href="quem.html">Quem somos</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <p>Nossas redes sociais:</p>
+                <li><i class="fa fa-whatsapp" href="#"></i><i class="fa fa-facebook" href="#"></i><i class="fa fa-instagram" href="#"></i></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <center>
+            <section>
+                <img id="banner" src="/assets/banner.png">
+            </section>
+            <section class="mensagem">
+                <h1>Nos mande uma mensagem!</h1>
+                <p>Em caso de dúvida, agendamento ou sugestão, deixe sua mensagem que entraremos em contato assim que possível :)</p>
+
+            </section>
+            <form>
+                <label for="nomesobrenome">Nome e Sobrenome</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+                <label for="email">Email</label>
+                <input type="text" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" class="input-padrao" required placeholder="(XX)XXXXX-XXXX">
+
+                <label for="mensagem">Mensagem</label>
+                <textarea cols="60" rows="10" id="mensagem" style="resize: none;"></textarea class="input-padrao" required>
+
+                <fieldset>
+                    <legend>Como prefere o nosso contato?</legend>
+                    <label for="radio-email"><input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                
+                    <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                   
+                    <label for="radio-zap"><input type="radio" name="contato" value="Whatsapp" id="radio-zap" checked>Whatsapp</label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Qual horário prefere ser atendido?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option>Tarde</option>
+                        <option>Noite</option>
+                    </select>
+                </fieldset>
+
+                <label ><input type="checkbox" class="checkbox">Gostaria de receber nossas novidades por email?</label>
+
+                <input type="submit" value="Enviar mensagem" class="enviar">
+            </form>
+        </center>
+    </main>
+</body>
+
+</html>

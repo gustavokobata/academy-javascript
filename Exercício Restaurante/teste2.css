@@ -1,0 +1,148 @@
+@font-face {
+    font-family: 'icones';
+    src: url(fonts/icones.ttf);
+}
+
+html {
+    width: 940px;
+}
+
+body {
+    width: 940px;
+    font-family: 'Quicksand', 'icones', 'Open Sans';
+}
+
+.menu-lateral {
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(27, 138, 80);
+    height: 100vw;
+    position: fixed;
+    padding: none;
+}
+
+.logo-menu-lateral {
+    width: 150px;
+    align-self: center;
+    padding: 32px 50px;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+.itens-menu-lateral {
+    font-size: 1.2rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    padding: 8px 0px;
+    align-items: center;
+    margin: 6px;
+}
+
+.itens-menu-lateral:hover {
+    background-color: #b9e9cb;
+    color: green;
+    border-radius: 8px;
+}
+
+/*.itens-menu-lateral::before {
+    content: "\e902";
+    font-size: 24px;
+    padding-right: 16px;
+    padding-left: 32px;
+}
+*/
+.home-menu-lateral::before {
+    content: "\e902";
+    font-size: 24px;
+    padding-right: 16px;
+    padding-left: 32px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+.principal {
+    width: 690px;
+    height: 100%;
+    margin-left: 250px;
+    padding: none;
+    background-color: rgb(255, 255, 255);
+}
+
+/* CARTÃO PRINCIPAL */
+.cartao-principal {
+    width: 690px;
+    height: 350px;
+    overflow: hidden;
+    position: relative;
+    background-color: aliceblue;
+}
+
+.botao {
+    font-family: 'Quicksand', sans-serif;
+    padding-top: 225px;
+    padding-left: 50px;
+}
+
+.nome-pagina {
+    font-size: 2.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+/* CARTÃO PRINCIPAL */
+
+/* CARTÕES DESTAQUE */
+#produtos {
+    transition: .5s;
+    background-color: rgb(224, 255, 239);
+    overflow: hidden;
+    position: relative;
+}
+
+.nome-produtos {
+    font-size: 2rem;
+    font-weight: 700;
+    font-family: 'Quicksand', sans-serif;
+    align-self: center;
+}
+
+/* CARTÕES DESTAQUE */
+
+/* CARTÕES PRODUTOS */
+.cartao {
+    width: 210px;
+    height: 300px;
+    margin: 30px 20px;
+    background-color: bisque;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+
+.titulo-cartao {
+    font-size: 1.5rem;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.cartao-info {
+    text-align: center;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.cartao-botao {
+    background-color: green;
+    border-radius: 4px;
+    align-self: center;
+    color: #b9e9cb;
+    margin-top: 10px;
+}
+
+.imagem-produto {
+    width: 100%;
+}
+
+
+/* CARTÕES PRODUTOS */
+
+/* CONTEÚDO PRINCIPAL */

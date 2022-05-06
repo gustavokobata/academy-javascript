@@ -1,0 +1,9 @@
+HTML Tables
+
+para fazer juntar células:
+
+juntar colunas
+<th colspan="2">título</th>
+
+juntar linhas
+<th rowspan="2">título</th>
